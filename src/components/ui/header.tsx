@@ -29,7 +29,7 @@ export const Header = () => {
               <li><Link to={'/'}>Inicio</Link></li>
               <li><Link to={'/gallery'}>Galeria</Link></li>
               <li><Link to={'/'}>Sobre</Link></li>
-              <li><Link to={'/'}>Contato</Link></li>
+              <li><Link to={'/contact'}>Contato</Link></li>
             </Stack>
           </Box>
           <Button component={Link} to={'/blog'} variant="contained">Acesse o blog</Button>
