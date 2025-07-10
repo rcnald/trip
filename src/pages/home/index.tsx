@@ -1,7 +1,7 @@
 import { Button, Container, Stack, styled, Typography } from "@mui/material"
 import heroBg from '../../assets/hero.png';
 import { Link } from "../../components/ui/link";
-import { Contact } from "../../components/ui/contact";
+import { AboutUs } from "../../components/ui/about-us";
 
 const Hero = styled('section')(({ theme }) => ({
   backgroundImage: `url(${heroBg})`,
@@ -17,7 +17,7 @@ export const CTAButton = styled(Button)(({ theme }) => ({
   "&:hover": {
     background: `linear-gradient(to right, ${theme.palette.warning.dark}, ${theme.palette.error.dark})`,
   },
-}))
+})) as typeof Button
 
 export const Home = () => {
   return (
@@ -33,14 +33,14 @@ export const Home = () => {
             Descubra destinos incríveis, viva aventuras inesquecíveis e mergulhe na diversidade cultural do nosso planeta
           </Typography>
           <Stack spacing={2} direction={"row"} marginTop={4} >
-            <CTAButton variant="contained" color="warning">📸 Ver Galeria</CTAButton>
+            <CTAButton component={Link} to={'/gallery'} variant="contained" color="warning">📸 Ver Galeria</CTAButton>
             <Button component={Link} to={'/blog'} color="info" variant="outlined" sx={{ background: "white" }}>
               📖 Visite Nosso Blog
             </Button>
           </Stack>
         </Container>
       </Hero>
-      <Contact/>
+      <AboutUs/>
     </>
   )
 }

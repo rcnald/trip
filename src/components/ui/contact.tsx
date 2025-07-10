@@ -13,7 +13,7 @@ export const Contact = () => {
   const feedbackMessage = submitStatus && feedback[submitStatus];
 
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 8, md: 10 } }}>
+    <Container maxWidth="lg" sx={{ py: { xs: 8, md: 10 } }} id="contact">
       <Grid container>
         <Card sx={{ boxShadow: 3, width: '100%' }}>
           <CardHeader
