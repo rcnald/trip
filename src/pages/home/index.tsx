@@ -27,6 +27,7 @@ export const Home = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          paddingTop: 10,
         }} maxWidth="lg">
           <Typography variant="h1" fontSize={48} fontWeight={700} >Explore o mundo com a ViajeMais</Typography>
           <Typography variant="caption">
