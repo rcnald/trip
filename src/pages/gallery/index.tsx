@@ -91,7 +91,7 @@ export function Gallery() {
     <>
       <Hero>
         <Container maxWidth="lg">
-          <Box sx={{ textAlign: 'center' }}>
+          <Box sx={{ textAlign: 'center', paddingTop: 20 }}>
             <Typography
               variant="h1"
               fontWeight={700}

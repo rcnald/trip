@@ -21,7 +21,7 @@ export const Blog = () => {
     <>
       <Hero>
         <Container maxWidth="lg">
-          <Box textAlign={'center'}>
+          <Box textAlign={'center'} sx={{ paddingTop: 20 }}>
             <Typography variant="h1" fontWeight={700} marginBottom={3} sx={{ fontSize: { xs: '3rem', md: '3.75rem' } }}>
               📖 Blog de Viagens
             </Typography>

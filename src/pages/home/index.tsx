@@ -32,7 +32,7 @@ export const Home = () => {
           <Typography variant="caption">
             Descubra destinos incríveis, viva aventuras inesquecíveis e mergulhe na diversidade cultural do nosso planeta
           </Typography>
-          <Stack spacing={2} direction={"row"} marginTop={4} >
+          <Stack spacing={2} direction={{xs: "column", sm: "row"}} marginTop={4} >
             <CTAButton component={Link} to={'/gallery'} variant="contained" color="warning">📸 Ver Galeria</CTAButton>
             <Button component={Link} to={'/blog'} color="info" variant="outlined" sx={{ background: "white" }}>
               📖 Visite Nosso Blog
