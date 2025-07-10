@@ -32,15 +32,22 @@ export const Blog = () => {
         </Container>
       </Hero>
 
+
       <section>
         <Container maxWidth="lg" sx={{ paddingY: 8 }}>
-          <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 2, md: 3 }}>
-            {articles.map((article) => (
-              <Grid size={1}>
-                <ArticleCard article={article}></ArticleCard>
-              </Grid>
-            ))}
-          </Grid>
+          {error ? (
+            <Typography variant="h6" color="error">Erro ao carregar artigos</Typography>
+          ) : (
+            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 2, md: 3 }}>
+              {loading ? <Typography variant="h6" color="error">Carregando...</Typography> : null}
+              {!loading && articles.map((article) => (
+                <Grid size={1}>
+                  <ArticleCard article={article}></ArticleCard>
+                </Grid>
+              ))}
+            </Grid>
+          )}
+
         </Container>
       </section>
     </>
