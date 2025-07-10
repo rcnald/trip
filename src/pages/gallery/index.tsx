@@ -24,7 +24,6 @@ const Subtitle = styled(Typography)(({ theme }) => ({
 }));
 
 export function Gallery() {
-  // test only
   const galleryImages = [
     {
       id: '1',
